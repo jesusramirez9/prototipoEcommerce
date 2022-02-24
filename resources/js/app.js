@@ -1,5 +1,4 @@
 require('./bootstrap');
-require('./magnifier');
 
 import Alpine from 'alpinejs';
 

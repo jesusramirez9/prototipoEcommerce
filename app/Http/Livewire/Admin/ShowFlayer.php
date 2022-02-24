@@ -4,15 +4,18 @@ namespace App\Http\Livewire\Admin;
 
 use App\Models\Flayer;
 use Illuminate\Support\Facades\Storage;
+use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use Livewire\WithPagination;
 
 class ShowFlayer extends Component
 {
+    use LivewireAlert;
     use WithPagination;
     use WithFileUploads;
 
+    public $aceptar = true;
     public $image, $identificador;
     public $open_edit = false;
     public $post;
@@ -87,6 +90,8 @@ class ShowFlayer extends Component
     }
     public function render()
     {
+       
+
         $posts = Flayer::where('title', 'like', '%' . $this->search . '%')
             ->orWhere('description', 'like', '%' . $this->search . '%')
             ->orderBy($this->sort, $this->direction)
@@ -96,6 +101,13 @@ class ShowFlayer extends Component
     }
     public function delete(Flayer $post)
     {
+        
         $post->delete();
+      
+      
+        
+
+        // $post->delete();
     }
+  
 }

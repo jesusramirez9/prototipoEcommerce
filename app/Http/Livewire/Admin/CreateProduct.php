@@ -9,9 +9,12 @@ use App\Models\Subcategory;
 use Illuminate\Database\Eloquent\Builder;
 use Livewire\Component;
 use Illuminate\Support\Str;
+use Jantinnerezo\LivewireAlert\LivewireAlert;
 
 class CreateProduct extends Component
 {
+    use LivewireAlert;
+    
     public $categories, $subcategories = [], $brands = [];
 
     public $category_id = "", $subcategory_id ="", $brand_id = "";
@@ -90,8 +93,8 @@ class CreateProduct extends Component
 
             }
         }
-
         $product->save();
+        $this->alert('success', 'Producto creado');
 
          return redirect()->route('admin.products.edit', $product);
 
@@ -99,6 +102,7 @@ class CreateProduct extends Component
 
     public function render()
     {
+       
         return view('livewire.admin.create-product')->layout('layouts.admin');
     }
 }

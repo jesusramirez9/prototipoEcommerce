@@ -21,7 +21,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     @livewireStyles
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+    <x-livewire-alert::scripts />
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
     {{-- ckedito --}}

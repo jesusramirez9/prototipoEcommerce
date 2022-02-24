@@ -6,6 +6,9 @@
                 <h1 class="font-semibold text-xl text-gray-800 leading-tight">
                     Productos
                 </h1>
+                <x-button-enlace href="{{ route('admin.products.create') }}" class="bg-green-800 mx-5 hover:bg-black ml-auto">
+                    Agregar más producto
+                </x-button-enlace>
                 <x-jet-danger-button wire:click="$emit('deleteProduct')">
                     Eliminar
                 </x-jet-danger-button>

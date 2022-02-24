@@ -11,9 +11,11 @@ use App\Models\Image;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
+use Jantinnerezo\LivewireAlert\LivewireAlert;
 
 class EditProduct extends Component
 {
+    use LivewireAlert;
     public $product, $categories, $subcategories, $brands, $slug;
     
     public $category_id;
@@ -127,6 +129,8 @@ class EditProduct extends Component
     }
     public function render()
     {
+        $this->alert('success', 'Producto Actualizado');
+
         return view('livewire.admin.edit-product')->layout('layouts.admin');
     }
 }
