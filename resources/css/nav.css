@@ -1,0 +1,93 @@
+#navigation-menu{
+    height: calc(100vh - 4rem);
+}
+
+
+.navigation-link:hover .navigation-submenu{
+    display: block !important;
+}
+.fondo_bg{
+    background-color: #9C303D;
+}
+.h-contacto{
+    height: 40rem;
+}
+.lr{
+    left: 10%;
+    right: 10%;
+}
+
+.brdinput{
+    border: none;
+}
+.brdinput{
+    border-bottom: 1px solid #ced4da !important;
+}
+.color_logo{
+    background-color:#9C303D ;
+}
+.colorred{
+    color: #9C303D;
+}
+.colorosa{
+    color: #FA586A;
+}
+.shdot-text{
+    text-shadow: 1px 2px 0px #787878;
+}
+.d-initial{
+    display: initial;
+}
+.bg-1{
+background-color: #FFB368;
+}
+.bg-2{
+    background-color: #FF5266;  
+}
+.bg-3{
+    background-color: #9C313B; 
+}
+
+@media(min-width:320px){
+    .mapa_contacto iframe {
+        width: 100%;
+        height: 22rem;
+    }
+}
+
+@media(min-width:375px){
+    
+}
+
+@media(min-width:425px){
+    
+}
+
+@media(min-width:600px){
+    
+}
+
+@media(min-width:7680px){
+    
+}
+
+@media(min-width:1024px){
+    .mapa_contacto iframe {
+        width: 100%;
+        height: 26rem;
+    }
+}
+
+@media(min-width:1200px){
+    
+}
+
+@media(min-width:1440px){
+    
+}
+@media(min-width:1600px){
+    
+}
+@media(min-width:1900px){
+    
+}

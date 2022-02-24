@@ -1,0 +1,83 @@
+.hrgreen {
+    height: 3px;
+    background: #02776e;
+}
+
+.titlecambio {
+    font-size: 1.4rem;
+    color: #fba65b;
+    font-weight: bold;
+}
+.clli li {
+    color: #fba65b;
+}
+
+.textli {
+    color: #515151;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.browmcolrd{
+    color: #493832;
+    font-weight: 600;
+}
+
+@media (min-width: 320px) {
+}
+@media (min-width: 375px) {
+    .bg-cmbio {
+        height: 34rem !important;
+    }
+    .txtp-cmbio {
+        left: 16% !important;
+        top: 28% !important;
+    }
+}
+@media (min-width: 425px) {
+    .bg-cmbio {
+        height: 38.5rem !important;
+    }
+}
+@media (min-width: 768px) {
+    .bg-cmbio {
+        height: 23rem !important;
+    }
+    .txtp-cmbio {
+        left: 8% !important;
+        top: 30% !important;
+    }
+}
+@media (min-width: 1024px) {
+    .txtp-cmbio {
+        left: 3% !important;
+        top: 28% !important;
+    }
+}
+@media (min-width: 1200px) {
+    .txtp-cmbio {
+        left: 6% !important;
+        top: 28% !important;
+    }
+}
+@media (min-width: 1300px) {
+}
+@media (min-width: 1440px) {
+    .txtp-cmbio {
+        left: 12% !important;
+        top: 28% !important;
+    }
+}
+@media (min-width: 1600px) {
+    .txtp-cmbio {
+        left: 16% !important;
+        top: 28% !important;
+    }
+}
+@media (min-width: 1900px) {
+    .txtp-cmbio {
+        left: 20% !important;
+        top: 28% !important;
+    }
+}
+@media (min-width: 1920px) {
+}

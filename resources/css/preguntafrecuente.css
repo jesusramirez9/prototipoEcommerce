@@ -1,0 +1,174 @@
+
+.text-circl{
+    line-height: 2.2rem;
+}
+.txtrosa{
+    color: #FFEED8;
+    font-weight: bold;
+
+}
+.txtmrron{
+    color: #554A42;
+    font-weight: bold;
+   
+}
+.brdcordion{
+    border: 2px solid #02776e; 
+}
+
+.accordion{
+    border: 2px solid #02776e;
+}
+.accordion .contentBx{
+    position: relative;
+    margin: 0px 10px;
+}
+
+.accordion .contentBx .label{
+    position: relative;
+    padding: 10px;
+ 
+    cursor: pointer;
+}
+
+.accordion .contentBx .label::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    color: #02776E;
+
+}
+
+.accordion .contentBx.active .label::before{
+    content: '-';
+    font-size: 2.5em;
+    top: 45%;
+    right: 20px;
+    color: #02776E;
+}
+
+.accordion .contentBx .content{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.accordion .contentBx.active .content{
+    height: 150px;
+    padding: 10px;
+}
+
+@media(min-width:320px){
+    .accordion .contentBx.active .content{
+        height: auto;
+    padding: 0px 3rem 2rem 0.5rem;
+    }
+    .accordion .contentBx .label::before {     
+        top: 50%;
+        right: 0px;       
+    }
+    .accordion .contentBx.active .label::before {     
+        top: 45%;
+        right: 0px;     
+    }
+}
+@media(min-width:320px){
+    .accordion .contentBx.active .content{
+        height: auto;
+        padding: 0px 0.5rem 1rem 0.5rem;
+    }
+  
+}
+@media(min-width:375px){
+    .bgfondoprguntfe{
+        height: 34rem !important;
+    }
+    .txtpprguntafre{
+        left: 16% !important;
+    top: 28% !important;
+    }
+}
+@media(min-width:425px){
+    .accordion .contentBx.active .content{
+      
+    }
+    .bgfondoprguntfe{
+        height: 38.5rem !important;
+    }
+    .txtpprguntafre{
+        left: 20% !important;
+    top: 28% !important;
+    }
+  
+}
+@media(min-width:768px){
+    .accordion .contentBx.active .content{
+        height: auto;
+        padding: 0px 3rem 2rem 0.5rem;
+    }
+    .accordion .contentBx .label::before {     
+        top: 50%;
+        right: 20px;       
+    }
+    .accordion .contentBx.active .label::before {     
+        top: 45%;
+        right: 20px;     
+    }
+    .txtpprguntafre{
+        left: 7% !important;
+    top: 29% !important;
+    }
+    .bgfondoprguntfe {
+        height: 23rem !important;
+    }
+}
+@media(min-width:1024px){
+    .accordion .contentBx.active .content{
+        height: auto;
+    padding: 0px 3rem 2rem 0.5rem;
+    }
+    .txtpprguntafre{
+        left: 5% !important;
+    top: 29% !important;
+    }
+}
+
+@media(min-width:1200px){
+
+}
+@media(min-width:1300px){
+    
+}
+
+@media(min-width:1440px){
+    .txtpprguntafre{
+        left: 10% !important;
+    top: 29% !important;
+    }
+}
+
+@media(min-width:1600px){
+    .txtpprguntafre{
+        left: 14% !important;
+    top: 29% !important;
+    }
+}
+@media(min-width:1800px){
+    .txtpprguntafre{
+        left: 16% !important;
+    top: 29% !important;
+    }
+}
+@media(min-width:1900px){
+    .txtpprguntafre{
+        left: 20% !important;
+    top: 29% !important;
+    }
+}
+
+
